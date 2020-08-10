@@ -1,0 +1,94 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    animation-name: bg-change;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, black, black, blue,blue, chartreuse, chartreuse);
+}
+
+@keyframes bg-change {
+    15% {
+        background: linear-gradient(45deg,  black, black, blue,blue, chartreuse, chartreuse);
+    }
+    30% {
+        background: linear-gradient(45deg,  chartreuse, black, black, blue,blue, chartreuse);
+    }
+    45% {
+        background: linear-gradient(45deg, chartreuse, chartreuse, black, black, blue,blue);
+    }
+    60% {
+        background: linear-gradient(45deg, blue, chartreuse, chartreuse, black, black, blue);
+    }
+    75% {
+        background: linear-gradient(45deg, blue, blue, chartreuse, chartreuse, black, black);
+    }
+    94% {
+        background: linear-gradient(45deg, black, blue, blue, chartreuse, chartreuse, black);
+    }
+}
+
+div {
+    width: 600px;
+    background-color: black;
+    border: 5px solid white;
+    padding: 30px;
+    box-shadow: darkblue 4px;
+}
+
+#myname {
+    border: 0px;
+    height: 150px;
+    position: relative;
+    width: 400px;
+    margin: auto;
+}
+
+h3 {
+    position: absolute;
+    left: 60px;
+    top: 0px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid white;
+    background-color: chartreuse;
+    color: black;
+    font-size: 30px;
+}
+
+h2 {
+    position: absolute;
+    right: 60px;
+    top: 52px;
+    text-transform: uppercase;
+    text-align: right;
+    padding: 10px;
+    border: 3px solid white;
+    background-color: blue;
+    color: black;
+    font-size: 30px;
+}
+
+
+h1 {
+    text-align: center;
+    color: white;
+    padding: 20px 0px;
+}
+
+p {
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
