@@ -1,0 +1,218 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*
+blue color - #29438e
+green color - #73eb27
+ */
+header {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+section {
+    padding: 150px 0px;
+}
+
+/* Animazione divisorio sezioni */
+
+#divider {
+    height: 15px;
+    border: 2px solid black;
+    width: 100%;
+    background: linear-gradient(45deg, 
+            black,
+            black,
+            black,
+            #29438e,
+            #29438e,
+            #29438e, 
+            #29438e,
+            #73eb27, 
+            #73eb27,
+            #73eb27);
+    animation-name: bg-change;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bg-change {
+    10% {
+        background: linear-gradient(45deg, 
+            #73eb27,
+            black,
+            black,
+            black,
+            #29438e,
+            #29438e,
+            #29438e, 
+            #29438e,
+            #73eb27, 
+            #73eb27
+            );
+    }
+    20% {
+        background: linear-gradient(45deg, 
+            #73eb27,
+            #73eb27,
+            black,
+            black,
+            black,
+            #29438e,
+            #29438e,
+            #29438e, 
+            #29438e,
+            #73eb27);
+    }
+    30% {
+        background: linear-gradient(45deg, 
+            #73eb27,
+            #73eb27,
+            #73eb27,
+            black,
+            black,
+            black,
+            #29438e,
+            #29438e,
+            #29438e, 
+            #29438e
+            );
+    }
+    40% {
+        background: linear-gradient(45deg, 
+            #29438e, 
+            #73eb27,
+            #73eb27,
+            #73eb27,
+            black,
+            black,
+            black,
+            #29438e,
+            #29438e,
+            #29438e
+            );
+    }
+    50% {
+        background: linear-gradient(45deg, 
+            #29438e, 
+            #29438e,
+            #73eb27,
+            #73eb27,
+            #73eb27,
+            black,
+            black,
+            black,
+            #29438e,
+            #29438e            
+            );
+    }
+    60% {
+        background: linear-gradient(45deg, 
+            #29438e,
+            #29438e, 
+            #29438e,
+            #73eb27,
+            #73eb27,
+            #73eb27,
+            black,
+            black,
+            black,
+            #29438e                        
+            );
+    }
+    70% {
+        background: linear-gradient(45deg, 
+            #29438e,
+            #29438e,
+            #29438e, 
+            #29438e,
+            #73eb27,
+            #73eb27,
+            #73eb27,
+            black,
+            black,
+            black                       
+            );
+    }
+    80% {
+        background: linear-gradient(45deg, 
+            black,
+            #29438e,
+            #29438e,
+            #29438e, 
+            #29438e,
+            #73eb27,
+            #73eb27,
+            #73eb27,
+            black,
+            black                                   
+            );
+    }
+    90% {
+        background: linear-gradient(45deg, 
+            black
+            black,
+            #29438e,
+            #29438e,
+            #29438e, 
+            #29438e,
+            #73eb27,
+            #73eb27,
+            #73eb27,
+            black                                            
+            );
+    }
+    100% {
+        background: linear-gradient(45deg, 
+            black  
+            black
+            black,
+            #29438e,
+            #29438e,
+            #29438e, 
+            #29438e,
+            #73eb27,
+            #73eb27,
+            #73eb27                                
+            );
+    }
+
+}
+
+
+/* CSS sezioni mobile-first */
+
+#home {
+    text-align: center;
+    background-color: #29438e;
+    color: #73eb27;
+}
+
+#presentation {
+    text-align: center;
+    background-color: #73eb27;
+    color: #29438e;
+}
+
+#projects {
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+}
+
+#contacts {
+    text-align: center;
+    background-color: #73eb27;
+    color: #29438e;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}

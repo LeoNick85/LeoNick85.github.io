@@ -38,7 +38,7 @@ body {
     }
 }
 
-div {
+#wrapper {
     width: 600px;
     background-color: black;
     border: 5px solid white;
