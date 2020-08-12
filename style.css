@@ -1,94 +1,378 @@
 * {
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-body {
-    animation-name: bg-change;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+/*
+blue color - #29438e
+green color - #73eb27
+ */
+header {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+#header-small {
+    position: relative;
+    padding: 20px 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(45deg, black, black, blue,blue, chartreuse, chartreuse);
+}
+
+.fa-bars {
+    background-color: #29438e;
+    color: #73eb27;
+    cursor: pointer;
+}
+
+#hamburger-menu {
+    display: none;
+    color: white;
+    background-color: black;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    z-index: 5;
+    transform: translateY(100%);
+}
+
+#hamburger-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#hamburger-menu ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+#hamburger-menu li {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid white;
+}
+
+#hamburger-menu li:hover {
+    color: #29438e;
+    background-color: #73eb27;
+}
+
+/* Animazione divisorio sezioni */
+
+.divider {
+    height: 15px;
+    border: 2px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    width: 100%;
+    background: linear-gradient(45deg, 
+            black,
+            black,
+            black,
+            #29438e,
+            #29438e,
+            #29438e, 
+            #29438e,
+            #73eb27, 
+            #73eb27,
+            #73eb27);
+    animation-name: bg-change;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
 }
 
 @keyframes bg-change {
-    15% {
-        background: linear-gradient(45deg,  black, black, blue,blue, chartreuse, chartreuse);
+    10% {
+        background: linear-gradient(45deg, 
+            #73eb27,
+            black,
+            black,
+            black,
+            #29438e,
+            #29438e,
+            #29438e, 
+            #29438e,
+            #73eb27, 
+            #73eb27
+            );
+    }
+    20% {
+        background: linear-gradient(45deg, 
+            #73eb27,
+            #73eb27,
+            black,
+            black,
+            black,
+            #29438e,
+            #29438e,
+            #29438e, 
+            #29438e,
+            #73eb27);
     }
     30% {
-        background: linear-gradient(45deg,  chartreuse, black, black, blue,blue, chartreuse);
+        background: linear-gradient(45deg, 
+            #73eb27,
+            #73eb27,
+            #73eb27,
+            black,
+            black,
+            black,
+            #29438e,
+            #29438e,
+            #29438e, 
+            #29438e
+            );
     }
-    45% {
-        background: linear-gradient(45deg, chartreuse, chartreuse, black, black, blue,blue);
+    40% {
+        background: linear-gradient(45deg, 
+            #29438e, 
+            #73eb27,
+            #73eb27,
+            #73eb27,
+            black,
+            black,
+            black,
+            #29438e,
+            #29438e,
+            #29438e
+            );
+    }
+    50% {
+        background: linear-gradient(45deg, 
+            #29438e, 
+            #29438e,
+            #73eb27,
+            #73eb27,
+            #73eb27,
+            black,
+            black,
+            black,
+            #29438e,
+            #29438e            
+            );
     }
     60% {
-        background: linear-gradient(45deg, blue, chartreuse, chartreuse, black, black, blue);
+        background: linear-gradient(45deg, 
+            #29438e,
+            #29438e, 
+            #29438e,
+            #73eb27,
+            #73eb27,
+            #73eb27,
+            black,
+            black,
+            black,
+            #29438e                        
+            );
+    }
+    70% {
+        background: linear-gradient(45deg, 
+            #29438e,
+            #29438e,
+            #29438e, 
+            #29438e,
+            #73eb27,
+            #73eb27,
+            #73eb27,
+            black,
+            black,
+            black                       
+            );
+    }
+    80% {
+        background: linear-gradient(45deg, 
+            black,
+            #29438e,
+            #29438e,
+            #29438e, 
+            #29438e,
+            #73eb27,
+            #73eb27,
+            #73eb27,
+            black,
+            black                                   
+            );
+    }
+    90% {
+        background: linear-gradient(45deg, 
+            black
+            black,
+            #29438e,
+            #29438e,
+            #29438e, 
+            #29438e,
+            #73eb27,
+            #73eb27,
+            #73eb27,
+            black                                            
+            );
+    }
+    100% {
+        background: linear-gradient(45deg, 
+            black  
+            black
+            black,
+            #29438e,
+            #29438e,
+            #29438e, 
+            #29438e,
+            #73eb27,
+            #73eb27,
+            #73eb27                                
+            );
+    }
+
+}
+
+
+/* CSS sezioni */
+section {
+    padding: 150px 0px;
+}
+
+/* Prima sezione */
+#home {
+    padding-top: 75px;
+    text-align: center;
+    background-color: #29438e;
+    color: #73eb27;
+    position: relative;
+    overflow: hidden;
+}
+
+#home-quote {
+    background-color: rgba(194, 194, 194, 0.3);
+    color: white;
+    width: 50%;
+    padding: 15px;
+    margin: 30px auto;
+    border-radius: 6px;
+}
+
+#home-quote p {
+    font-style: italic;
+    padding: 10px 0px;
+}
+
+.green-decoration {
+    position: absolute;
+    background-color: #73eb27;
+    right: -17px;
+    top: 30px;
+    content: "";
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    animation-name: green-rotate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes green-rotate {
+    25% {
+       transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(135deg);
     }
     75% {
-        background: linear-gradient(45deg, blue, blue, chartreuse, chartreuse, black, black);
-    }
-    94% {
-        background: linear-gradient(45deg, black, blue, blue, chartreuse, chartreuse, black);
+        transform: rotate(180deg);
     }
 }
 
-#wrapper {
-    width: 600px;
-    background-color: black;
-    border: 5px solid white;
-    padding: 30px;
-    box-shadow: darkblue 4px;
-}
-
-#myname {
-    border: 0px;
-    height: 150px;
-    position: relative;
-    width: 400px;
-    margin: auto;
-}
-
-h3 {
+.black-decoration {
     position: absolute;
-    left: 60px;
-    top: 0px;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 10px;
-    border: 3px solid white;
-    background-color: chartreuse;
-    color: black;
-    font-size: 30px;
+    background-color: black;
+    left: -17px;
+    bottom: 30px;
+    content: "";
+    width: 50px;
+    height: 50px;
+    transform: rotate(-45deg);
+    animation-name: black-rotate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes black-rotate {
+    25% {
+       transform: rotate(-90deg);
+    }
+    50% {
+        transform: rotate(-135deg);
+    }
+    75% {
+        transform: rotate(-180deg);
+    }
+}
+
+#home img {
+    width: 50%; 
+    margin: 20px auto;
+}
+
+#home-wrapper {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0px;
+    background-color: black;
+    border-radius: 4px;
 }
 
 h2 {
-    position: absolute;
-    right: 60px;
-    top: 52px;
-    text-transform: uppercase;
-    text-align: right;
-    padding: 10px;
-    border: 3px solid white;
-    background-color: blue;
-    color: black;
-    font-size: 30px;
+    font-size: 35px;
 }
 
-
-h1 {
-    text-align: center;
-    color: white;
-    padding: 20px 0px;
+.greenonblue{
+    background-color: #29438e;
+    color: #73eb27;
+    padding: 7px;
+    border: 2px solid white;
+    
 }
 
-p {
+.blueongreen{
+    background-color: #73eb27;
+    color: #29438e;
+    padding: 7px;
+    border: 2px solid white;
+    border-right: 0px;
+}
+
+#home-wrapper p {
+    margin: 30px 0px;
+    font-size: 18px;
     color: white;
     text-decoration: underline;
+}
+
+#presentation {
     text-align: center;
+    background-color: #73eb27;
+    color: #29438e;
+}
+
+#projects {
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+}
+
+#contacts {
+    text-align: center;
+    background-color: #73eb27;
+    color: #29438e;
+}
+
+footer {
+    background-color: black;
+    color: white;
 }
