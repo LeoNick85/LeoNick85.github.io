@@ -2,6 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/7220c352f8.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -9,24 +10,48 @@
 </head>
 <body>
     <header>
-        <h1>Daniele Nicolini</h1>
+        <div id="header-small">
+            <i class="fas fa-2x fa-bars"></i>
+            <h1><span class="blueongreen">Daniele</span><span class="greenonblue">Nicolini</span></h1>
+            <div id="hamburger-menu">
+                <ul>
+                    <li>
+                        <a href="#presentation">Chi sono</a>
+                    </li>
+                    <li><a href="#presentation">I miei progetti</a>
+                    </li>
+                    <li><a href="#presentation">Contattami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
     <main>
         <section id="home">
-            <h2>Daniele Nicolini</h2>
-            <p>web developer</p>
+            <div class="green-decoration">
+            </div>
+            <div id="home-quote">
+                <p>"Splendida citazione sulla programmazione"</p> 
+                <small>Grande autore</small>
+            </div>
+            <div id="home-wrapper">
+                <img src="img/myavatar.png" alt="My avatar">
+                <h2><span class="blueongreen">Daniele</span><span class="greenonblue">Nicolini</span></h2>
+                <p>web developer</p>
+            </div>
+            <div class="black-decoration"></div>
         </section>
-        <div id="divider"></div>
+        <div class="divider"></div>
         <section id="presentation">
             <h2>Chi sono</h2>
             <p>web developer</p>
         </section>
-        <div id="divider"></div>
+        <div class="divider"></div>
         <section id="projects">
             <h2>I miei progetti</h2>
             <p>web developer</p>
         </section>
-        <div id="divider"></div>
+        <div class="divider"></div>
         <section id="contacts">
             <h2>I miei contatti</h2>
             <p>web developer</p>
@@ -36,4 +61,5 @@
         <p>Copyright</p>
     </footer>
 </body>
+<script src="main.js"></script>
 </html>

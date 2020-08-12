@@ -15,13 +15,56 @@ header {
     color: white;
 }
 
-section {
-    padding: 150px 0px;
+#header-small {
+    position: relative;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-bars {
+    background-color: #29438e;
+    color: #73eb27;
+    cursor: pointer;
+}
+
+#hamburger-menu {
+    display: none;
+    color: white;
+    background-color: black;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    z-index: 5;
+    transform: translateY(100%);
+}
+
+#hamburger-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#hamburger-menu ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+#hamburger-menu li {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid white;
+}
+
+#hamburger-menu li:hover {
+    color: #29438e;
+    background-color: #73eb27;
 }
 
 /* Animazione divisorio sezioni */
 
-#divider {
+.divider {
     height: 15px;
     border: 2px solid black;
     width: 100%;
@@ -186,12 +229,127 @@ section {
 }
 
 
-/* CSS sezioni mobile-first */
+/* CSS sezioni */
+section {
+    padding: 150px 0px;
+}
 
+/* Prima sezione */
 #home {
+    padding-top: 75px;
     text-align: center;
     background-color: #29438e;
     color: #73eb27;
+    position: relative;
+    overflow: hidden;
+}
+
+#home-quote {
+    background-color: rgba(194, 194, 194, 0.3);
+    color: white;
+    width: 50%;
+    padding: 15px;
+    margin: 30px auto;
+    border-radius: 6px;
+}
+
+#home-quote p {
+    font-style: italic;
+    padding: 10px 0px;
+}
+
+.green-decoration {
+    position: absolute;
+    background-color: #73eb27;
+    right: -17px;
+    top: 30px;
+    content: "";
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    animation-name: green-rotate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes green-rotate {
+    25% {
+       transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(135deg);
+    }
+    75% {
+        transform: rotate(180deg);
+    }
+}
+
+.black-decoration {
+    position: absolute;
+    background-color: black;
+    left: -17px;
+    bottom: 30px;
+    content: "";
+    width: 50px;
+    height: 50px;
+    transform: rotate(-45deg);
+    animation-name: black-rotate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes black-rotate {
+    25% {
+       transform: rotate(-90deg);
+    }
+    50% {
+        transform: rotate(-135deg);
+    }
+    75% {
+        transform: rotate(-180deg);
+    }
+}
+
+#home img {
+    width: 50%; 
+    margin: 20px auto;
+}
+
+#home-wrapper {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0px;
+    background-color: black;
+    border-radius: 4px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+.greenonblue{
+    background-color: #29438e;
+    color: #73eb27;
+    padding: 7px;
+    border: 2px solid white;
+    
+}
+
+.blueongreen{
+    background-color: #73eb27;
+    color: #29438e;
+    padding: 7px;
+    border: 2px solid white;
+    border-right: 0px;
+}
+
+#home-wrapper p {
+    margin: 30px 0px;
+    font-size: 18px;
+    color: white;
+    text-decoration: underline;
 }
 
 #presentation {
