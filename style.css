@@ -5,6 +5,13 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 /*
 blue color - #29438e
 green color - #73eb27
@@ -24,7 +31,6 @@ header {
 }
 
 .fa-bars {
-    background-color: #29438e;
     color: #73eb27;
     cursor: pointer;
 }
@@ -60,6 +66,10 @@ header {
 #hamburger-menu li:hover {
     color: #29438e;
     background-color: #73eb27;
+}
+
+#header-big {
+    display: none;
 }
 
 /* Animazione divisorio sezioni */
@@ -327,7 +337,7 @@ section {
     border-radius: 4px;
 }
 
-h2 {
+#home-wrapper h2 {
     font-size: 35px;
 }
 
@@ -349,17 +359,73 @@ h2 {
 
 #home-wrapper p {
     margin: 30px 0px;
-    font-size: 18px;
+    font-size: 22px;
     color: white;
-    text-decoration: underline;
 }
 
+/* Seconda sezione: Chi sono */
 #presentation {
     text-align: center;
     background-color: #73eb27;
     color: #29438e;
+    padding: 0px 0px 30px 0px;
 }
 
+#presentation h2 {
+    height: 50px;
+    display: inline-block;
+    background-color: #29438e;
+    color: #73eb27;
+    padding: 8px 14px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-bottom: 40px;
+}
+
+#presentation-wrapper {
+    width: 90%;
+    margin: auto;
+    border: 2px solid #29438e;
+    border-radius: 6px;
+}
+
+.presentation-row:first-child {
+    border-bottom: 2px solid #29438e;
+}
+
+.presentation-row .presentation-text{
+    width: 50%;
+    float: left;
+    background-color: #29438e;
+    color: #73eb27;
+    padding: 6px;
+}
+
+.presentation-row .presentation-img {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.presentation-row .presentation-img img {
+    padding-top: 30%;
+    width: 80%;
+}
+
+.presentation-row .presentation-icons {
+    font-size: 50px;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 200px;
+}
+
+/* Terza sezione: progetti */
 #projects {
     text-align: center;
     background-color: lightgray;
@@ -375,4 +441,56 @@ h2 {
 footer {
     background-color: black;
     color: white;
+    padding: 7px;
+    text-align: center;
+}
+
+/* Media query */
+
+@media screen and (min-width: 768px) {
+    /* Header */
+    #header-small {
+        display: none;
+    }
+
+    #header-big {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    #header-big ul {
+        list-style-type: none;
+    }
+
+    #header-big li {
+        float: left;
+        padding: 20px;
+    }
+
+    #header-big li:hover {
+        background-color: #73eb27;
+    }
+
+    #header-big li:hover a {
+        color: #29438e;
+        text-decoration: underline;
+    }
+
+    #header-big li a {
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+    }
+
+/* Prima sezione */
+    #home-quote {
+        width: 30%;
+    }
+
+    #home-wrapper {
+        width: 50%;
+    }
 }

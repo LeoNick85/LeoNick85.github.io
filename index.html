@@ -2,6 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/7220c352f8.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
@@ -25,6 +26,22 @@
                 </ul>
             </div>
         </div>
+        <div id="header-big">
+            <h1><span class="blueongreen">Daniele</span><span class="greenonblue">Nicolini</span></h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#presentation">Chi sono</a>
+                    </li>
+                    <li>
+                        <a href="#projects">I miei progetti</a>
+                    </li>
+                    <li>
+                        <a href="#contacts">Contattami</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section id="home">
@@ -37,14 +54,38 @@
             <div id="home-wrapper">
                 <img src="img/myavatar.png" alt="My avatar">
                 <h2><span class="blueongreen">Daniele</span><span class="greenonblue">Nicolini</span></h2>
-                <p>&lt;web developer&gt;</p>
+                <p>&lt;web developer/&gt;</p>
             </div>
             <div class="black-decoration"></div>
         </section>
         <div class="divider"></div>
         <section id="presentation">
             <h2>Chi sono</h2>
-            <p>work in progress</p>
+            <div id="presentation-wrapper">
+                <div class="presentation-row clearfix">
+                    <div class="presentation-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error illum eveniet at expedita vel animi voluptas minima explicabo mollitia voluptatum sequi laudantium nulla ullam, consequuntur hic doloremque! Quaerat, deserunt.</p>
+                    </div>
+                    <div class="presentation-img">
+                        <img src="img/programming.png" alt="Ancora nada">
+                    </div>
+                </div>
+                <div class="presentation-row clearfix">
+                    <div class="presentation-icons">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js-square"></i>
+                        <i class="fab fa-php"></i>
+                        <i class="fab fa-sass"></i>
+                        <i class="fab fa-bootstrap"></i>
+                        <i class="fab fa-wordpress"></i>
+                        <i class="fab fa-laravel"></i>
+                    </div>
+                    <div class="presentation-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error illum eveniet at expedita vel animi voluptas minima explicabo mollitia voluptatum sequi laudantium nulla ullam, consequuntur hic doloremque! Quaerat, deserunt.</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <div class="divider"></div>
         <section id="projects">
@@ -58,7 +99,8 @@
         </section>
     </main>
     <footer>
-        <p>Portfolio personale realizzato da Daniele Nicolini - Contenuti protetti da Creative Commons</p>
+        <p>&copy; Portfolio personale realizzato da Daniele Nicolini </p>
+        <a href="https://stories.freepik.com/web">Illustration by Freepik Stories</a>
     </footer>
 </body>
 <script src="main.js"></script>
