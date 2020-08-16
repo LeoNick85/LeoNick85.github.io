@@ -330,11 +330,90 @@ section {
 }
 
 #home-wrapper {
+    position: relative;
     width: 90%;
     margin: auto;
     padding: 20px 0px;
     background-color: black;
     border-radius: 4px;
+}
+
+#home-wrapper::before {
+    position: absolute;
+    content: "";
+    background-color: #73eb27;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+    transform: translate(-50%, -50%);
+    top: 0px;
+    left: 0px;
+    animation-name: decoration1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes decoration1 {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    20% {
+        top: 0px;
+        left: 100%;
+    }
+    50% {
+        top: 100%;
+        left: 100%;
+    }
+    70% {
+        top: 100%;
+        left: 0%;
+    }
+    100% {
+        top: 0%;
+        left: 0%;
+    }
+}
+
+#home-wrapper::after {
+    position: absolute;
+    content: "";
+    background-color: #29438e;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    top: 100%;
+    left: 100%;
+    animation-name: decoration2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes decoration2 {
+    0% {
+        top: 100%;
+        left: 100%;
+    }
+    20% {
+        top: 100%;
+        left: 0%;
+    }
+    50% {
+        top: 0%;
+        left: 0%;
+    }
+    70% {
+        top: 0%;
+        left: 100%;
+    }
+    100% {
+        top: 100%;
+        left: 100%;
+    }
 }
 
 #home-wrapper h2 {
@@ -596,4 +675,37 @@ footer a {
     #home-wrapper {
         width: 50%;
     }
+
+    /* Seconda sezione */
+
+    #presentation-wrapper {
+        width: 70%;
+    }
+
+    .presentation-img img {
+        width: 50%;
+    }
+
+    /* Terza sezione */
+
+    /* Quarta sezione */
+
+    #contacts-wrapper {
+        width: 70%;
+    }
+
+    #contacts-wrapper a:hover i.fa-envelope{
+        color: firebrick;
+    }
+
+    #contacts-wrapper a:hover i.fa-linkedin{
+        color: blue;
+    }
+
+    #contacts-wrapper a:hover i.fa-github{
+        color: grey;
+    }
+
+
 }
+
