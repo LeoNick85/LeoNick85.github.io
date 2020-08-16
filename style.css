@@ -447,7 +447,7 @@ section {
     text-align: center;
     background-color: #73eb27;
     color: #29438e;
-    padding: 0px 0px 30px 0px;
+    padding: 0px 0px 50px 0px;
 }
 
 #presentation h2 {
@@ -540,7 +540,7 @@ section {
 
 /* Terza sezione: progetti */
 #projects {
-    padding: 0px 0px 150px 0px;
+    padding: 0px 0px 50px 0px;
     text-align: center;
     background-color: lightgray;
     color: black;
@@ -555,6 +555,55 @@ section {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     margin-bottom: 40px;
+}
+
+.project-item {
+    width: 100%;
+    background-color: black;
+    color: lightgray;
+    padding: 15px 0px;
+    box-shadow: 16px 16px 15px grey;
+    margin-bottom: 80px;
+}
+
+.project-item h3 {
+    padding: 10px 0px;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.project-item p {
+    padding: 10px 4px;
+    font-size: 18px;
+}
+
+.project-details {
+    background-color: black;
+    color: #73eb27;
+    font-size: 15px;
+    border: 0px;
+    padding: 8px 10px;
+    margin: 8px 0px;
+    cursor: pointer;
+}
+
+.btn-project1 {
+    display: block;
+    background-color: lightgray;
+    color: black;
+    padding: 8px 10px;
+    margin: 8px 0px;
+    border: 2px outset white;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.project-img {
+    border: 1px solid lightgray;
+}
+
+.project-img img {
+    width: 100%;
 }
 
 /* Quarta sezione: contatti */
@@ -687,6 +736,19 @@ footer a {
     }
 
     /* Terza sezione */
+    .project-container {
+        margin: auto;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-item {
+        width: 300px;
+        margin: 30px;
+    }
 
     /* Quarta sezione */
 
