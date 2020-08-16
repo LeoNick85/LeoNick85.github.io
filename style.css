@@ -92,7 +92,7 @@ header {
             #73eb27,
             #73eb27);
     animation-name: bg-change;
-    animation-duration: 800ms;
+    animation-duration: 1200ms;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
 }
@@ -605,6 +605,10 @@ section {
 .project-img img {
     width: 100%;
 }
+
+.project-item.template {
+    display: none;
+} 
 
 /* Quarta sezione: contatti */
 #contacts {
