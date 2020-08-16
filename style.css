@@ -383,66 +383,169 @@ section {
 }
 
 #presentation-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 90%;
     margin: auto;
     border: 2px solid #29438e;
     border-radius: 6px;
 }
 
-.presentation-row:first-child {
-    border-bottom: 2px solid #29438e;
-}
-
-.presentation-row .presentation-text{
-    width: 50%;
-    float: left;
+.presentation-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     background-color: #29438e;
     color: #73eb27;
-    padding: 6px;
+    padding: 15px 10px;
 }
 
-.presentation-row .presentation-img {
-    float: left;
+.presentation-img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
 }
 
-.presentation-row .presentation-img img {
-    padding-top: 30%;
-    width: 80%;
+.presentation-img img {
+    width: 90%;
 }
 
-.presentation-row .presentation-icons {
+.presentation-icons {
     font-size: 50px;
-    float: left;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    width: 50%;
-    height: 200px;
+    padding: 0px 10px;
 }
+
+/* Colori icone */
+.fa-html5 {
+    color: #df420d;
+}
+
+.fa-css3-alt {
+    color: #254bde;
+}
+
+.fa-js-square {
+    color: #ceb32f;
+}
+
+.fa-sass {
+    color: #c76396;
+}
+
+.fa-bootstrap {
+    color: #543b79;
+}
+
+.fa-php {
+    color: #7478ae;
+}
+
+.fa-database {
+    color: #939cb0;
+}
+
+.fa-wordpress {
+    color: #207297;
+}
+
+.fa-laravel {
+    color: #ec4e43;
+}
+
+
 
 /* Terza sezione: progetti */
 #projects {
+    padding: 0px 0px 150px 0px;
     text-align: center;
     background-color: lightgray;
     color: black;
 }
 
+#projects h2 {
+    height: 50px;
+    display: inline-block;
+    background-color: black;
+    color: lightgray;
+    padding: 8px 14px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-bottom: 40px;
+}
+
+/* Quarta sezione: contatti */
 #contacts {
+    padding: 0px 0px 100px 0px;
     text-align: center;
     background-color: #73eb27;
     color: #29438e;
 }
+
+#contacts h2 {
+    height: 50px;
+    display: inline-block;
+    background-color: #29438e;
+    color: #73eb27;
+    padding: 8px 14px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-bottom: 70px;
+}
+
+#contacts h3 {
+    display: block;
+    background-color: #29438e;
+    color: #73eb27;
+    margin-bottom: 20px;
+    padding: 16px 8px;
+}
+
+#contacts-wrapper {
+    width: 95%;
+    margin: auto;
+    border: 2px solid #29438e;
+    border-radius: 5px;
+}
+
+#contacts-wrapper #contacts-link{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contacts-wrapper i {
+    font-size: 90px;
+}
+
+#contacts-wrapper i.fa-envelope{
+    color: red;
+}
+
+#contacts-wrapper i.fa-linkedin{
+    color: #0077b5;
+}
+
+#contacts-wrapper i.fa-github{
+    color: white;
+}
+
+/* Footer */
 
 footer {
     background-color: black;
     color: white;
     padding: 7px;
     text-align: center;
+}
+
+footer a {
+    color: lightgray;
 }
 
 /* Media query */
